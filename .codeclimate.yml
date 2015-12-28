@@ -5,6 +5,9 @@ engines:
     config:
       languages:
         - javascript
+        - php
+        - python
+        - ruby
   #  eslint:
   #    enabled: true
   #  fixme:
