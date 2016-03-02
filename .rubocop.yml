@@ -1,0 +1,10 @@
+AllCops:
+  DisabledByDefault: true
+
+inherit_from: "vendor/cc-styleguide/rubocop.yml"
+
+require:
+  - ./vendor/will_cops/sample_cop.rb
+
+WillCops/SampleCop:
+  Enabled: true
