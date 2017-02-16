@@ -12,5 +12,14 @@ module Vagrant
 
       @logger.info("CLI: #{@main_args.inspect} #{@sub_command.inspect} #{@sub_args.inspect}")
     end
+    
+    def initialize(argv, env)
+      super
+
+      @logger = Log4r::Logger.new("vagrant::cli")
+      @main_args, @sub_command, @sub_args = split_main_and_subcommand(argv)
+
+      @logger.info("CLI: #{@main_args.inspect} #{@sub_command.inspect} #{@sub_args.inspect}")
+    end
   end
 end
