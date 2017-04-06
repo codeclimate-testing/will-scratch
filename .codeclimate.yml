@@ -2,9 +2,9 @@
 workspace_setup:
   - git clone https://github.com/codeclimate/styleguide.git vendor/cc-styleguide
   - git clone https://github.com/wfleming/will_cops.git vendor/will_cops
-#engines:
-  #rubocop:
-    #enabled: true
+engines:
+  rubocop:
+    enabled: true
 ratings:
   paths:
   - "**.rb"
