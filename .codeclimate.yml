@@ -2,9 +2,10 @@
 engines:
   rubocop:
     enabled: false
-ratings:
-  paths:
-  - "**.rb"
+checks:
+  method-lines:
+    config:
+      threshold: 60
 exclude_paths:
   - ruby/e*
   - ruby/b*
