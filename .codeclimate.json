@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "engines": {
+    "rubocop": {
+      "enabled": false
+    }
+  },
+  "checks": {
+    "method-lines": {
+      "config": {
+        "threshold": 60
+      }
+    }
+  },
+  "exclude_patterns": [
+    "ruby/e*",
+    "ruby/b*"
+  ]
+}
